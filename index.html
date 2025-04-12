@@ -27,16 +27,16 @@
             <div class="hero-content flex-col lg:flex-row-reverse">
               
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                <div class="card-body">
+                <form class="card-body">
                   <fieldset class="fieldset">
                     <label class="fieldset-label">Account number</label>
-                    <input type="number" class="input" placeholder="Type your Account number" />
+                    <input value="01360923871" id="account-number" type="number" class="input" placeholder="Type your number" maxlength="11" required />
                     <label class="fieldset-label">4 Digit Pin</label>
-                    <input type="text" class="input" placeholder="Type your PIN" />
+                    <input value="1234" id="pin" type="text" class="input" placeholder="Type your PIN" required/>
                     <div><a class="link link-hover">Forgot password?</a></div>
                     <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
                   </fieldset>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -44,5 +44,7 @@
 
     
     
+
+    <script src="./script/login.js"></script>
 </body>
 </html>
